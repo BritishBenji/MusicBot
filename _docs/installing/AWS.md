@@ -33,3 +33,36 @@ Note: It is suggested that you save this key in multiple places to prevent it be
 
 <img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair.PNG" alt="Create A Key Pair" />
 
+### Interacting with the Ubuntu Instance
+Now that You have set up your Instance with AWS, we need to find a way to interact with it. This can be done with any form of SSH client, however, for this example, we'll be using PuTTY (which can be downloaded and installed from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+With PuTTY installed, we first need to open PuTTYgen, this will allow use to change the public key Amazon provided us with into something PuTTY can interact with and use.
+With the PuTTYgen program open, load an existing private key file using the "Load" button, and save it as a Public Key. To keep things simple, save this with the same filename as your original key, with the .ppk file extension.
+
+<img src="{{ site.baseurl }}/images/AWS/PuTTYgen.PNG" alt="PuTTYgen UI"/>
+
+Once you have saved this, open PuTTY and AWS side by side. On your AWS window, find and copy your "Public DNS (IPv4)", and paste this into the "Host Name (or IP address)" text box with the prefix "ubuntu@" (example below)
+
+Following on from this page, expand the "SSH" tab on the right hand side of the screen and click "Auth" 
+Select your .ppk file using the "Browse..." option, then go back to the "Session" tab and click open. 
+You will be brought to a black screen with text on it, you are now in your Ubuntu Workspace on your EC2 Instance.
+Use the code below to install the bot to this Instance:
+
+~~~ bash
+# Install build tools
+sudo apt-get install build-essential unzip -y
+sudo apt-get install software-properties-common -y
+
+# Install system dependencies
+sudo apt-get update -y
+sudo apt-get install git ffmpeg libopus-dev libffi-dev libsodium-dev python3-pip 
+sudo apt-get upgrade -y
+
+# Clone the MusicBot to your home directory
+git clone https://github.com/Just-Some-Bots/MusicBot.git ~/MusicBot -b master
+cd ~/MusicBot
+
+# Install Python dependencies
+sudo python3 -m pip install -U pip
+sudo python3 -m pip install -U -r requirements.txt
+~~~
