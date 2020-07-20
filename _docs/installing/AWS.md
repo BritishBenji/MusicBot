@@ -1,7 +1,7 @@
 ---
 Title: Amazon Web Service
 category: Installing the bot
-order:1
+order:8
 ---
 
 <img class="doc-img" src="{{ site.baseurl }}/images/AWS/AWS.PNG" alt="Amazon Web Service" style="width:75px;
