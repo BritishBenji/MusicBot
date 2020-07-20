@@ -75,5 +75,5 @@ From here, you are free to configure the bot, for those who aren't familiar with
 |      Command     |                           Function                           |
 |:----------------:|:------------------------------------------------------------:|
 |        ls        | Shows you the files and directories in the current directory |
-|  cd <directory>  |             Takes you to the specified directory             |
+|  cd \<directory>  |             Takes you to the specified directory             |
 | nano <file_name> |                     Opens Ubuntu's editor                    |
