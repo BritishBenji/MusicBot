@@ -43,6 +43,8 @@ With the PuTTYgen program open, load an existing private key file using the "Loa
 
 Once you have saved this, open PuTTY and AWS side by side. On your AWS window, find and copy your "Public DNS (IPv4)", and paste this into the "Host Name (or IP address)" text box with the prefix "ubuntu@" (example below)
 
+<img src="{{ site.baseurl }}/images/AWS/Puttygen.PNG" alt="PuTTY example"/>
+
 Following on from this page, expand the "SSH" tab on the right hand side of the screen and click "Auth" 
 Select your .ppk file using the "Browse..." option, then go back to the "Session" tab and click open. 
 You will be brought to a black screen with text on it, you are now in your Ubuntu Workspace on your EC2 Instance.
