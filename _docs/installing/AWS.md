@@ -16,10 +16,7 @@ You must first have a Personal Account with them before continuing with this wal
 Before you can run a program through AWS, you must first create an EC2 Instance. To do this, Navigate to the "Services" tab in the top left
 and select EC2.
 
-<img src="{{ site.baseurl }}/images/AWS/Select_EC2.PNG" alt="Select the EC2 option" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;"/>
+<img src="{{ site.baseurl }}/images/AWS/Select_EC2.PNG" alt="Select the EC2 option" style="display: block"/>
 
 From here, you can click the Orange "Launch Instance" button, to start setting up your instance.
 
