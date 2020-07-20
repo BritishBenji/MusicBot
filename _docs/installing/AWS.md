@@ -31,5 +31,5 @@ From here, click "Review and Launch", then "Launch" your instance. You will reci
 Here, you will need to select "Create a new key pair" from the drop-down box, and give it a name. THen download your key, and click "Launch Instances."
 Note: It is suggested that you save this key in multiple places to prevent it being lost, as once you Launch your instance, there is no way to get a new key without creating a new Instance.
 
-<img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair".PNG" alt="Create A Key Pair" style="float:right;"/>
+<img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair.PNG" alt="Create A Key Pair" style="float:right;"/>
 
