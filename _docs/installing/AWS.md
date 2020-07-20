@@ -34,7 +34,7 @@ Note: It is suggested that you save this key in multiple places to prevent it be
 <img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair.PNG" alt="Create A Key Pair" />
 
 ### Interacting with the Ubuntu Instance
-Now that You have set up your Instance with AWS, we need to find a way to interact with it. This can be done with any form of SSH client, however, for this example, we'll be using PuTTY (which can be downloaded and installed from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+Now that You have set up your Instance with AWS, we need to find a way to interact with it. This can be done with any form of SSH client, however, for this example, we'll be using PuTTY (which can be downloaded and installed from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
 
 With PuTTY installed, we first need to open PuTTYgen, this will allow use to change the public key Amazon provided us with into something PuTTY can interact with and use.
 With the PuTTYgen program open, load an existing private key file using the "Load" button, and save it as a Public Key. To keep things simple, save this with the same filename as your original key, with the .ppk file extension.
