@@ -39,7 +39,7 @@ Now that You have set up your Instance with AWS, we need to find a way to intera
 With PuTTY installed, we first need to open PuTTYgen, this will allow use to change the public key Amazon provided us with into something PuTTY can interact with and use.
 With the PuTTYgen program open, load an existing private key file using the "Load" button, and save it as a Public Key. To keep things simple, save this with the same filename as your original key, with the .ppk file extension.
 
-<img src="{{ site.baseurl }}/images/AWS/PuTTYgen.PNG" alt="PuTTYgen UI"/>
+<img src="{{ site.baseurl }}/images/AWS/PuTTYgen_UI.PNG" alt="PuTTYgen UI"/>
 
 Once you have saved this, open PuTTY and AWS side by side. On your AWS window, find and copy your "Public DNS (IPv4)", and paste this into the "Host Name (or IP address)" text box with the prefix "ubuntu@" (example below)
 
