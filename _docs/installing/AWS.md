@@ -7,7 +7,7 @@ order:8
 <img class="doc-img" src="{{ site.baseurl }}/images/AWS/AWS.PNG" alt="Amazon Web Service" style="width:75px;
 float: right;"/>
 
-This wlakthrough will take you through the steps required to host the bot externally using a VPS. 
+This walkthrough will take you through the steps required to host the bot externally using a VPS. 
 For this, we recommend the use of [Amazon Web Service](aws.amazon.com)
 You must first have a Personal Account with them before continuing with this walkthrough.
 
@@ -16,7 +16,7 @@ You must first have a Personal Account with them before continuing with this wal
 Before you can run a program through AWS, you must first create an EC2 Instance. To do this, Navigate to the "Services" tab in the top left
 and select EC2.
 
-<img src="{{ site.baseurl }}/images/AWS/Select_EC2.PNG" alt="Select the EC2 option" style="display: block"/>
+<img src="{{ site.baseurl }}/images/AWS/Select_EC2.PNG" alt="Select the EC2 option"/>
 
 From here, you can click the Orange "Launch Instance" button, to start setting up your instance.
 
