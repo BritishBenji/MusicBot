@@ -77,3 +77,15 @@ From here, you are free to configure the bot, for those who aren't familiar with
 |        ls        | Shows you the files and directories in the current directory |
 |  cd \<directory>  |             Takes you to the specified directory             |
 | nano \<file_name> |                     Opens Ubuntu's editor                    |
+
+### Running the bot
+Once you have configured the bot, navigate to the main "MusicBot" directory, and run the command 
+~~~ bash
+screen
+~~~
+You will be presented with a large chunk of text telling you about the license, press the space bar to accept and continue.
+From here, you should run the command:
+~~~ bash
+python3 run.py
+~~~
+After a few seconds the bot will begin to run, press Ctrl + A and then Ctrl + D, to open a new Ubuntu session, then close the PuTTY client, your bot is now being run via Amazon Web Services.
