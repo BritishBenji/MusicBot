@@ -68,3 +68,12 @@ cd ~/MusicBot
 sudo python3 -m pip install -U pip
 sudo python3 -m pip install -U -r requirements.txt
 ~~~
+
+### Configure the bot
+From here, you are free to configure the bot, for those who aren't familiar with Ubuntu Terminal Syntax, the table below should give you a place to start:
+
+|      Command     |                           Function                           |
+|:----------------:|:------------------------------------------------------------:|
+|        ls        | Shows you the files and directories in the current directory |
+|  cd <directory>  |             Takes you to the specified directory             |
+| nano <file_name> |                     Opens Ubuntu's editor                    |
