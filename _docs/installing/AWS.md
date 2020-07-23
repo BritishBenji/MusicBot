@@ -28,7 +28,7 @@ and this walkthrough will be catered to that option.
 <img src="{{ site.baseurl }}/images/AWS/Free_Tier_Ubuntu.PNG" alt="Ubuntu 18.04 EC2"/>
 
 From here, click "Review and Launch", then "Launch" your instance. You will recieve a pop-up, asking you to "Select an existing key pair or create a new key pair."
-Here, you will need to select "Create a new key pair" from the drop-down box, and give it a name. THen download your key, and click "Launch Instances."
+Here, you will need to select "Create a new key pair" from the drop-down box, and give it a name. Then download your key, and click "Launch Instances."
 Note: It is suggested that you save this key in multiple places to prevent it being lost, as once you Launch your instance, there is no way to get a new key without creating a new Instance.
 
 <img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair.PNG" alt="Create A Key Pair" />
