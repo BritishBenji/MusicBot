@@ -22,21 +22,21 @@ From here, you can click the Orange "Launch Instance" button, to start setting u
 
 <img src="{{ site.baseurl }}/images/AWS/Launch_Instance.PNG" alt="Launch Instance"/>
 
-You will be given many different options for which option to run, our suggestion is that you choose the "Ubuntu Server 18.04 LTS (HMV) service 
+You will be given many different options for which option to run. Our suggestion is that you choose the "Ubuntu Server 18.04 LTS (HMV)" service 
 and this walkthrough will be catered to that option.
 
 <img src="{{ site.baseurl }}/images/AWS/Free_Tier_Ubuntu.PNG" alt="Ubuntu 18.04 EC2"/>
 
 From here, click "Review and Launch", then "Launch" your instance. You will recieve a pop-up, asking you to "Select an existing key pair or create a new key pair."
 Here, you will need to select "Create a new key pair" from the drop-down box, and give it a name. Then download your key, and click "Launch Instances."
-Note: It is suggested that you save this key in multiple places to prevent it being lost, as once you Launch your instance, there is no way to get a new key without creating a new Instance.
+Note: It is suggested that you save this key in multiple places to prevent it being lost, as once you Launch your instance, there is no way to recover the key without creating a brand new Instance.
 
 <img src="{{ site.baseurl }}/images/AWS/Create_New_Key_Pair.PNG" alt="Create A Key Pair" />
 
 ### Interacting with the Ubuntu Instance
-Now that You have set up your Instance with AWS, we need to find a way to interact with it. This can be done with any form of SSH client, however, for this example, we'll be using PuTTY (which can be downloaded and installed from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+Now that you have set up your Instance with AWS, we need to find a way to interact with it. This can be done with any form of SSH client, however, for this example, we'll be using PuTTY (which can be downloaded and installed from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
 
-With PuTTY installed, we first need to open PuTTYgen, this will allow use to change the public key Amazon provided us with into something PuTTY can interact with and use.
+With PuTTY installed, we first need to open PuTTYgen, this will allow use to change the Priavte Key Amazon provided us with into something PuTTY can interact with and use.
 With the PuTTYgen program open, load an existing private key file using the "Load" button, and save it as a Public Key. To keep things simple, save this with the same filename as your original key, with the .ppk file extension.
 
 <img src="{{ site.baseurl }}/images/AWS/PuTTYgen_UI.PNG" alt="PuTTYgen UI"/>
@@ -70,7 +70,7 @@ sudo python3 -m pip install -U -r requirements.txt
 ~~~
 
 ### Configure the bot
-From here, you are free to configure the bot, for those who aren't familiar with Ubuntu Terminal Syntax, the table below should give you a place to start alonside the [configuration](https://just-some-bots.github.io/MusicBot/using/configuration) page
+From here, you are free to configure the bot, for those who aren't familiar with Ubuntu Terminal Syntax, the table below should give you a place to start alonside the [configuration](https://just-some-bots.github.io/MusicBot/using/configuration) page on this Wiki
 
 |      Command     |                           Function                           |
 |:----------------:|:------------------------------------------------------------:|
@@ -87,5 +87,5 @@ From here, you should run the command:
 ~~~ bash
 python3 run.py
 ~~~
-After a few seconds the bot will begin to run, press Ctrl + A to interact with screen, and then Ctrl + D to detach the screen and begin working on your main Ubuntu window again, then you're free to close the PuTTY client, your bot is now being run via Amazon Web Services.
+After a few seconds the bot will begin to run, press Ctrl + A to interact with screen, and then Ctrl + D to detach the screen and begin working on your main Ubuntu window again, then you're free to close the PuTTY client. Your bot is now being run via Amazon Web Services.
 
